@@ -37,7 +37,7 @@ An ultra-fast, interactive 3D Rubik's Cube application featuring a high-performa
 ### Mobile AR Helicopter Simulator (Unity / C#)
 My very first completed project, successfully **shipped and deployed to production on Google Play**. It is a mobile augmented reality helicopter simulator that maps true drone aerodynamics into an AR environment.
 
-<img src="YOUR_HELICOPTER_GIF_URL" width="600" alt="AR Helicopter Demo">
+<img src="images/heli.gif" width="600" alt="AR Helicopter Demo">
 
 * **Why it matters:** The repository is now safely archived as private (legacy codebase, as my current professional focus is entirely on the Go + Python ecosystem). However, building this product end-to-end provided me with a robust engineering foundation in 3D mathematics, vector physics, quaternion transformations, and the complete product release lifecycle.
 * **🔊 Full Video with 3D Spatial Audio:** [Watch Demo on YouTube](https://www.youtube.com/watch?v=63eYgKwUqXM) *(Headphones recommended for spatial blade sounds)*
