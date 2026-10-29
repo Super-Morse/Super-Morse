@@ -51,5 +51,5 @@ My very first completed project, successfully **shipped and deployed to producti
 
 ---
 <p align="right">
-  <em>Morse Code <span style="letter-spacing: 2px;">..- ._</span> 📟</em>
+  <em>Morse Code <span style="letter-spacing: 2px;">..- ._</span></em> 📟
 </p>
