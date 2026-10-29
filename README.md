@@ -50,5 +50,6 @@ My very first completed project, successfully **shipped and deployed to producti
 * **Tools & Frameworks:** WebAssembly, Three.js, OpenCV, Git, Docker, SonarCloud, Linux
 
 ---
-
-                                                                   *Morse Code ..- ._ 📟*
+<p align="right">
+  <em>Morse Code <span style="letter-spacing: 2px;">..- ._</span> 📟</em>
+</p>
