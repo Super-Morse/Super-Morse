@@ -20,13 +20,32 @@ An intelligent detector designed to recognize the state of a scrambled physical 
 ### 🧩 2. Rubik's Cube 3D Solver (Go + WebAssembly)
 An ultra-fast, interactive 3D Rubik's Cube application featuring a high-performance solver built with pure Go and compiled to WebAssembly to run natively in the browser.
 
-* **🔗 Live Demo:** [super-morse.github.io/rubiks-solver](https://github.io)
+* **🔗 Live Demo:** [super-morse.github.io/rubiks-solver](https://super-morse.github.io/rubiks-solver/)
 * **Stack:** Go (Golang), WASM, JavaScript (ES6+), Three.js (WebGL).
 * **Code Quality:** 100% statement coverage via unit testing, 0% duplication, absolute Grade "A" for security and maintainability via SonarCloud.
 
-| Desktop Full-Width View | Mobile View (Samsung A16) |
-|---|---|
-| <img src="images/desktop-demo.gif" width="450" alt="Desktop Demo"> | <img src="images/mobile-demo.gif" width="220" alt="Mobile Demo"> |
+📸 Demo & Interface
+
+<details open>
+<summary><b>Click to expand live animations</b></summary>
+<br>
+
+<div align="center">
+  <table border="0">
+    <tr>
+      <td align="center" valign="top" width="60%">
+        <b>🖥️ Desktop Full-Width View</b><br><br>
+        <img src="docs/assets/desktop-demo.gif" alt="Desktop Web Demo" width="100%" style="border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.3);"/>
+      </td>
+      <td align="center" valign="top" width="35%">
+        <b>📱 Mobile View (Samsung A16)</b><br><br>
+        <img src="docs/assets/mobile-demo.gif" alt="Mobile Web Demo" width="100%" style="border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.3);"/>
+      </td>
+    </tr>
+  </table>
+</div>
+
+</details>
 
 > 💡 **Architectural Trade-off:** The Two-Phase Kociemba solver routine executes directly in the browser in just **~40ms**. Heavy algorithmic workloads are offloaded from the server straight to the client-side binary runtime via WASM, ensuring absolute zero UI lag.
 
