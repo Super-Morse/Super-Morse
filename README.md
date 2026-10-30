@@ -24,7 +24,7 @@ An ultra-fast, interactive 3D Rubik's Cube application featuring a high-performa
 * **Stack:** Go (Golang), WASM, JavaScript (ES6+), Three.js (WebGL).
 * **Code Quality:** 100% statement coverage via unit testing, 0% duplication, absolute Grade "A" for security and maintainability via SonarCloud.
 
-##📸 Demo & Interface
+##👀 Demo & Interface
 
 <details open>
 <summary><b>Click to expand live animations</b></summary>
