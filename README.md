@@ -11,7 +11,7 @@ I am an experienced **Python** developer specializing in computer vision, machin
 ### 📸 1. Rubik's Cube CV Detector (Python + Computer Vision)
 *⏳ Work in progress — full integration and mega-cool demo video coming soon!*
 
-An intelligent detector designed to recognize the state of a scrambled physical Rubik's Cube from a photo/camera stream and feed its color matrix configuration directly into a high-performance solver engine.
+An intelligent detector designed to recognize the state of a scrambled physical Rubik's Cube from a camera stream and feed its color matrix configuration directly into a high-performance solver engine.
 * **Stack:** Python, OpenCV / YOLO, NumPy.
 * **Architecture:** Python acts as the "brains" of the ecosystem, handling image preprocessing, contour detection, and color classification. It generates a standard Singmaster notation string and passes it directly to the Go engine for real-time 3D state building and instant macro-solving routines.
 
