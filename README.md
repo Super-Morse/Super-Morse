@@ -9,13 +9,35 @@ I am an experienced **Python** developer specializing in computer vision, machin
 ## 💻 Key Projects in Focus
 
 ### 📸 1. Rubik's Cube CV Detector (Python + Computer Vision)
-*⏳ Work in progress — full integration and mega-cool demo video coming soon!*
-
 An intelligent detector designed to recognize the state of a scrambled physical Rubik's Cube from a photo/camera stream and feed its color matrix configuration directly into a high-performance solver engine.
 
 🚀 **Live Web App:** https://rubiks-visual-detector-and-solver.onrender.com
 * **Stack:** Python, OpenCV / YOLO, NumPy.
 * **Architecture:** Python acts as the "brains" of the ecosystem, handling image preprocessing, contour detection, and color classification. It generates a standard Singmaster notation string and passes it directly to the Go engine for real-time 3D state building and instant macro-solving routines.
+* **Code Quality:** 100% statement coverage via unit testing, 0% duplication, absolute Grade "A" for security and maintainability via SonarCloud.
+
+👀 Demo & Interface
+
+<details open>
+<summary><b>Click to expand live animations</b></summary>
+<br>
+
+<div align="center">
+  <table border="0" cellspacing="10" cellpadding="0">
+    <tr>
+      <td align="center" valign="top" width="60%">
+        <b>🖥️ Desktop Live Scanner & Solver</b><br><br>
+        <img src="images/detector-desktop-demo.gif" alt="Desktop Web Demo" width="100%" style="border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.3);"/>
+      </td>
+      <td align="center" valign="top" width="35%">
+        <b>📱 Mobile View (50/50 Split)</b><br><br>
+        <img src="images/detector-mobile-demo.gif" alt="Mobile Web Demo" width="100%" style="border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.3);"/>
+      </td>
+    </tr>
+  </table>
+</div>
+
+</details>
 
 ---
 
