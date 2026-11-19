@@ -75,6 +75,42 @@ An ultra-fast, interactive 3D Rubik's Cube application featuring a high-performa
 
 ---
 
+### 📟 3. Morse DSP — CW Encoder & Streaming Decoder (Go + DSP + WebAssembly)
+A real-time **Morse code (CW)** toolkit written in pure Go: a text codec, a click-free CW audio synthesizer and a streaming **DSP decoder** built on the **Goertzel algorithm**. It ships as a Unix-pipe-friendly CLI and as a WebAssembly radio console that runs entirely in the browser. The alphabet (ITU Latin, major European alphabets and Ukrainian) and the CW tone are detected automatically, with no settings needed.
+
+* **🔗 Live Demo:** [super-morse.github.io/morse-dsp](https://super-morse.github.io/morse-dsp/)
+* **📘 Study Guide (Ukrainian):** [morse-dsp зсередини](https://super-morse.github.io/morse-dsp/learn.html), the architecture, the DSP and the code explained step by step.
+* **Stack:** Go (Golang, standard library only), WASM, DSP (Goertzel, Welch/FFT), JavaScript (ES2020+), Canvas, HTML5 Audio.
+* **Architecture:** Sliding Goertzel filter → adaptive threshold (noise-floor median, peak tracker, squelch, hysteresis) → glitch filter → automatic WPM tracking → text, emitted character by character as it is received. A data-driven `LanguageProfile` registry scores every reading of the codes to pick the alphabet without delaying the output. The same core compiles to a native CLI that reads raw PCM from stdin (SDR-ready) and to WASM for the browser.
+* **Code Quality:** 100% statement coverage via unit and end-to-end noisy-audio testing, 0% duplication, absolute Grade "A" for security and maintainability via SonarCloud.
+
+👀 Demo & Interface
+
+<details open>
+<summary><b>Click to expand screenshots</b></summary>
+<br>
+
+<div align="center">
+  <table border="0" cellspacing="10" cellpadding="0">
+    <tr>
+      <td align="center" valign="top" width="64%">
+        <b>🖥️ Desktop Radio Console</b><br><br>
+        <img src="images/morse-dsp-desktop.png" alt="Morse DSP Desktop Web Console" width="100%" style="border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.3);"/>
+      </td>
+      <td align="center" valign="top" width="30%">
+        <b>📱 Mobile View</b><br><br>
+        <img src="images/morse-dsp-mobile.png" alt="Morse DSP Mobile View" width="100%" style="border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.3);"/>
+      </td>
+    </tr>
+  </table>
+</div>
+
+</details>
+
+> 💡 **Performance:** Decodes audio **1,000–1,500× faster than real time** on a single CPU core. At 0 dB SNR the character error rate is **0%** from 12 to 40 WPM, and ten minutes of pure noise produce **zero** false characters.
+
+---
+
 ## 🚁 Engineering Legacy (Production Experience)
 
 ### Mobile AR Helicopter Simulator (Unity / C#)
@@ -90,9 +126,9 @@ My very first completed project, successfully **shipped and deployed to producti
 ## 🛠 Tech Stack Overview
 
 * **Languages:** Python, Go (Golang), SQL (Prior background: C#, JS)
-* **Tools & Frameworks:** WebAssembly, Three.js, OpenCV, Git, Docker, SonarCloud, Linux
+* **Tools & Frameworks:** WebAssembly, Three.js, OpenCV, DSP (Goertzel, FFT), Git, Docker, SonarCloud, Linux
 
 ---
 <p align="right">
-  <em>Morse Code <span style="letter-spacing: 2px;">..- ._</span></em> 📟
+  <a href="https://super-morse.github.io/morse-dsp/"><em>Morse Code <span style="letter-spacing: 2px;">..- ._</span></em></a> 📟
 </p>
