@@ -81,8 +81,8 @@ A real-time **Morse code (CW)** toolkit written in pure Go: a text codec, a clic
 * **🔗 Live Demo:** [super-morse.github.io/morse-dsp](https://super-morse.github.io/morse-dsp/)
 * **📘 Study Guide (Ukrainian):** [morse-dsp зсередини](https://super-morse.github.io/morse-dsp/learn.html), the architecture, the DSP and the code explained step by step.
 * **Stack:** Go (Golang, standard library only), WASM, DSP (Goertzel, Welch/FFT), JavaScript (ES2020+), Canvas, HTML5 Audio.
-* **Architecture:** Sliding Goertzel filter → adaptive threshold (noise-floor median, peak tracker, squelch, hysteresis) → glitch filter → automatic WPM tracking → text, emitted character by character as it is received. A data-driven `LanguageProfile` registry scores every reading of the codes to pick the alphabet without delaying the output. The same core compiles to a native CLI that reads raw PCM from stdin (SDR-ready) and to WASM for the browser.
-* **Code Quality:** 100% statement coverage via unit and end-to-end noisy-audio testing, 0% duplication, absolute Grade "A" for security and maintainability via SonarCloud.
+* **Architecture:** Sliding Goertzel filter → adaptive threshold (noise-floor median, peak tracker, squelch, hysteresis) → glitch filter → automatic WPM tracking → text, emitted character by character as it is received. A data-driven `LanguageProfile` registry scores every reading of the codes to pick the alphabet without delaying the output. The same core compiles to WASM for the browser and to a native CLI (one `go install`) that reads raw PCM from stdin, ready for an SDR receiver to pipe its audio straight in.
+* **Code Quality:** 100% statement coverage of the core (99.9% overall) via unit, CLI and end-to-end noisy-audio testing, 0% duplication, absolute Grade "A" for security and maintainability via SonarCloud.
 
 👀 Demo & Interface
 
