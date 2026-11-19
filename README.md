@@ -12,6 +12,7 @@ I am an experienced **Python** developer specializing in computer vision, machin
 An intelligent detector designed to recognize the state of a scrambled physical Rubik's Cube from a photo/camera stream and feed its color matrix configuration directly into a high-performance solver engine.
 
 🚀 **Live Web App:** https://rubiks-visual-detector-and-solver.onrender.com
+* **📘 Study Guide (Ukrainian):** [Rubik's Visual Detector зсередини](https://super-morse.github.io/rubiks-visual-detector/learn.html), the architecture, the API and the code explained step by step.
 * **Stack:** Python, FastAPI, YOLO11 / ONNX Runtime, OpenCV, NumPy, Go (WASM), Three.js.
 * **Architecture:** Python handles the vision side: a custom-trained YOLO11 model on ONNX Runtime detects stickers, validates the cube, and builds a 54-char Kociemba facelet string, which is solved client-side by the Go WebAssembly engine.
 * **Code Quality:** 100% statement coverage via unit testing, 0% duplication, absolute Grade "A" for security and maintainability via SonarCloud.
